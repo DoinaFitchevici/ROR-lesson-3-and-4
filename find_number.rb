@@ -24,7 +24,6 @@ loop do
     puts "Your guess is too low."
   else
     puts "Correct! The secret number was #{secret_number}."
-    break
   end
 
 #If your guess is correct, it exits the loop, and asks you if you want to play again. If so, it starts with a new random number. If not, it exits the program.

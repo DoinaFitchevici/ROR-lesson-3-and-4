@@ -17,7 +17,7 @@ puts "Stored in hash: #{person}"
 #Prompt for and collect your age, storing that in the hash.
 
 puts "What is your age?"
-age = gets.chomp
+age = gets.chomp.to_i
 person[:age] = age
 puts "Stored in hash: #{person}"
 
@@ -59,10 +59,12 @@ puts "Stored in hash: #{person.values}"
 person[:first_name] = person[:first_name].capitalize
 person[:last_name] = person[:last_name].capitalize
 person[:city] = person[:city].capitalize
+puts "Capitalized person's first name, last name, and city: #{person}"
 
 #Change the state as stored in the person hash to upper case.
 
 person[:state] = person[:state].upcase
+puts "Uppercase person's state: #{person}"
 
 #Put the hash to the console again.
 
